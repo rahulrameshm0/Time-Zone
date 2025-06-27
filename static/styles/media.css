@@ -1,0 +1,38 @@
+@media (max-width: 768px) {
+  .navbar {
+    flex-direction: column;
+    align-items: flex-start;
+  }
+
+  .navbar-toggle {
+    display: block;
+    position: absolute;
+    top: 20px;
+    right: 20px;
+  }
+
+  .navbar-list,
+  .navbar-icon {
+    display: none;
+    flex-direction: column;
+    width: 100%;
+    margin-top: 10px;
+  }
+
+  .navbar-list.active,
+  .navbar-icon.active {
+    display: flex;
+  }
+
+  .navbar-list li {
+    width: 100%;
+    text-align: center;
+    padding: 10px 0;
+  }
+
+  .navbar-icon {
+    justify-content: center;
+    padding: 10px 0;
+  }
+}
+
