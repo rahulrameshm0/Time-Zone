@@ -129,3 +129,54 @@
     color: rgb(238, 61, 61);
     font-weight: 700;
 }
+
+.image3{
+    max-width: 100%;
+    height: auto;
+    display: block;
+}
+
+.image4{
+    max-width: 100%;
+    height: auto;
+    display: block;
+    margin-top: 1.8rem;
+}
+
+.modern-watch-img{
+    margin-top: 4rem;
+    display: flex;
+    justify-content: center;
+    gap: 1.5rem;
+}
+
+.image-wrapping{
+    overflow: hidden;
+    display: block;
+    /* object-fit: cover;  */
+}
+
+.image3{
+    transition: all 0.3s ease;
+    display: block;
+}
+
+.image4{
+    transition: all 0.3s ease;
+    display: block;
+}
+
+.image-wrapping:hover .image3{
+    transform: scale(1.1);
+}
+
+.image-wrapping:hover .image4{
+    transform: scale(1.1);
+}
+
+.image3:hover{
+    filter: brightness(70%);
+}
+.image4:hover{
+    filter: brightness(70%);
+}
