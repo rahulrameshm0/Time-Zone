@@ -11,6 +11,7 @@ https://docs.djangoproject.com/en/5.2/ref/settings/
 """
 
 from pathlib import Path
+import dj_database_url
 import os
 
 # Build paths inside the project like this: BASE_DIR / 'subdir'.
@@ -78,14 +79,11 @@ WSGI_APPLICATION = 'timeproject.wsgi.application'
 # https://docs.djangoproject.com/en/5.2/ref/settings/#databases
 
 DATABASES = {
-    'default': {
-        'ENGINE': 'django.db.backends.postgresql',
-        'NAME': 'watch_cart',
-        'USER':'postgres',
-        'PASSWORD':'724850',
-        'HOST': 'localhost'
-
-    }
+      'default': dj_database_url.config(
+        default='postgres://postgres:724850@localhost:5432/watch_cart',
+        conn_max_age=600,
+        ssl_require=False
+    )
 }
 
 # Password validation
