@@ -177,6 +177,20 @@
 .image3:hover{
     filter: brightness(70%);
 }
+
 .image4:hover{
     filter: brightness(70%);
+}
+
+.popular-items{
+    text-align: center;
+    margin-top: 10rem;
+}
+
+.h2{
+    font-size: 3rem;
+    font-weight: 700;
+}
+.sub-head-2{
+    margin-bottom: 5rem;
 }

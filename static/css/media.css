@@ -1,0 +1,573 @@
+@media (max-width: 768px) {
+  .navbar {
+    flex-direction: column;
+    align-items: flex-start;
+  }
+
+  .navbar-toggle {
+    display: block;
+    position: absolute;
+    top: 20px;
+    right: 20px;
+  }
+
+  .navbar-list,
+  .navbar-icon {
+    display: none;
+    flex-direction: column;
+    width: 100%;
+    margin-top: 10px;
+  }
+
+  .navbar-list.active,
+  .navbar-icon.active {
+    display: flex;
+  }
+
+  .navbar-list li {
+    width: 100%;
+    text-align: center;
+    padding: 10px 0;
+  }
+
+  .navbar-icon {
+    justify-content: center;
+    padding: 10px 0;
+  }
+}
+
+
+/* Large Desktop (1440px and up) */
+@media screen and (min-width: 1440px) {
+    .headline {
+        padding: 0 4rem;
+    }
+    
+    .article-head {
+        padding-left: 6rem;
+        font-size: 6rem;
+    }
+    
+    .sub-head {
+        padding-left: 6rem;
+        font-size: 1.3rem;
+    }
+    
+    .btn {
+        margin-left: 6rem;
+        padding: 1rem 2rem;
+        font-size: 1.1rem;
+    }
+    
+    .container-2 {
+        gap: 3rem;
+    }
+    
+    .modern-watch-img {
+        gap: 2rem;
+    }
+}
+
+/* Standard Desktop (1200px - 1439px) */
+@media screen and (max-width: 1439px) {
+    .article-head {
+        font-size: 5rem;
+    }
+    
+    .sub-head {
+        font-size: 1.2rem;
+    }
+}
+
+/* Small Desktop / Large Laptop (992px - 1199px) */
+@media screen and (max-width: 1199px) {
+    .headline {
+        padding: 0 2rem;
+    }
+    
+    .article-head {
+        padding-left: 3rem;
+        font-size: 4.5rem;
+        word-spacing: 0.8rem;
+    }
+    
+    .sub-head {
+        padding-left: 3rem;
+        font-size: 1.1rem;
+    }
+    
+    .btn {
+        margin-left: 3rem;
+        padding: 0.7rem 1.5rem;
+    }
+    
+    .container-2 {
+        gap: 1.5rem;
+    }
+    
+    .modern-watch-img {
+        gap: 1rem;
+        margin-top: 3rem;
+    }
+    
+    .popular-items {
+        margin-top: 8rem;
+    }
+    
+    .h2 {
+        font-size: 2.5rem;
+    }
+}
+
+/* Tablet Landscape (768px - 991px) */
+@media screen and (max-width: 991px) {
+    .headline {
+        flex-direction: column;
+        padding: 2rem 1.5rem;
+        text-align: center;
+        gap: 2rem;
+    }
+    
+    .article-head {
+        padding-left: 0;
+        font-size: 3.5rem;
+        word-spacing: 0.5rem;
+    }
+    
+    .sub-head {
+        padding-left: 0;
+        font-size: 1rem;
+        max-width: 600px;
+        margin: 0 auto;
+    }
+    
+    .btn {
+        margin-left: 0;
+        padding: 0.6rem 1.4rem;
+        display: inline-block;
+    }
+    
+    .img-1 {
+        max-width: 400px;
+        width: 100%;
+    }
+    
+    .new-item {
+        padding-top: 3rem;
+        font-size: 2.5rem;
+    }
+    
+    .container-2 {
+        flex-wrap: wrap;
+        gap: 1.5rem;
+        margin-top: 3rem;
+    }
+    
+    .new-watch {
+        flex: 1 1 300px;
+        max-width: 350px;
+    }
+    
+    .modern-watch-img {
+        flex-wrap: wrap;
+        gap: 1rem;
+        margin-top: 3rem;
+    }
+    
+    .watch-img {
+        flex: 1 1 200px;
+    }
+    
+    .popular-items {
+        margin-top: 6rem;
+    }
+    
+    .h2 {
+        font-size: 2.2rem;
+    }
+    
+    .sub-head-2 {
+        margin-bottom: 3rem;
+        font-size: 1rem;
+    }
+}
+
+/* Tablet Portrait (576px - 767px) */
+@media screen and (max-width: 767px) {
+    .headline {
+        padding: 1.5rem 1rem;
+        min-height: auto;
+    }
+    
+    .article-head {
+        font-size: 2.8rem;
+        word-spacing: 0.3rem;
+        line-height: 1.2;
+    }
+    
+    .sub-head {
+        font-size: 0.95rem;
+        margin-bottom: 1.5rem;
+    }
+    
+    .btn {
+        padding: 0.5rem 1.2rem;
+        font-size: 0.9rem;
+    }
+    
+    .img-1 {
+        max-width: 300px;
+    }
+    
+    .new-item {
+        font-size: 2rem;
+        padding-top: 2rem;
+    }
+    
+    .container-2 {
+        flex-direction: column;
+        align-items: center;
+        gap: 1.5rem;
+        margin-top: 2rem;
+    }
+    
+    .new-watch {
+        width: 100%;
+        max-width: 300px;
+    }
+    
+    .image2 {
+        width: 100%;
+        height: 200px;
+        object-fit: cover;
+    }
+    
+    .modern-watch-img {
+        flex-direction: column;
+        align-items: center;
+        gap: 1rem;
+        margin-top: 2rem;
+    }
+    
+    .watch-img {
+        width: 100%;
+        max-width: 300px;
+    }
+    
+    .image4 {
+        margin-top: 1rem;
+    }
+    
+    .popular-items {
+        margin-top: 4rem;
+    }
+    
+    .h2 {
+        font-size: 2rem;
+    }
+    
+    .sub-head-2 {
+        margin-bottom: 2rem;
+        padding: 0 1rem;
+    }
+}
+
+/* Mobile Landscape (481px - 575px) */
+@media screen and (max-width: 575px) {
+    .headline {
+        padding: 1rem 0.8rem;
+    }
+    
+    .article-head {
+        font-size: 2.4rem;
+        word-spacing: 0.2rem;
+    }
+    
+    .sub-head {
+        font-size: 0.9rem;
+        margin-bottom: 1rem;
+    }
+    
+    .btn {
+        padding: 0.4rem 1rem;
+        font-size: 0.85rem;
+    }
+    
+    .img-1 {
+        max-width: 250px;
+    }
+    
+    .new-item {
+        font-size: 1.8rem;
+        padding-top: 1.5rem;
+    }
+    
+    .container-2 {
+        margin-top: 1.5rem;
+        gap: 1rem;
+    }
+    
+    .new-watch {
+        max-width: 280px;
+    }
+    
+    .image2 {
+        height: 180px;
+    }
+    
+    .sub-heading {
+        font-size: 1.1rem;
+    }
+    
+    .amount {
+        font-size: 1.1rem;
+    }
+    
+    .modern-watch-img {
+        margin-top: 1.5rem;
+    }
+    
+    .watch-img {
+        max-width: 280px;
+    }
+    
+    .popular-items {
+        margin-top: 3rem;
+    }
+    
+    .h2 {
+        font-size: 1.8rem;
+    }
+    
+    .sub-head-2 {
+        font-size: 0.9rem;
+        margin-bottom: 1.5rem;
+    }
+}
+
+/* Mobile Portrait (320px - 480px) */
+@media screen and (max-width: 480px) {
+    .headline {
+        padding: 0.8rem 0.5rem;
+        gap: 1.5rem;
+    }
+    
+    .article-head {
+        font-size: 2rem;
+        word-spacing: 0.1rem;
+        line-height: 1.1;
+    }
+    
+    .sub-head {
+        font-size: 0.85rem;
+        margin-bottom: 0.8rem;
+        line-height: 1.4;
+    }
+    
+    .btn {
+        padding: 0.3rem 0.8rem;
+        font-size: 0.8rem;
+    }
+    
+    .img-1 {
+        max-width: 200px;
+    }
+    
+    .new-item {
+        font-size: 1.6rem;
+        padding-top: 1rem;
+    }
+    
+    .container-2 {
+        margin-top: 1rem;
+        gap: 0.8rem;
+    }
+    
+    .new-watch {
+        max-width: 250px;
+        padding: 0.5rem;
+    }
+    
+    .image2 {
+        height: 150px;
+    }
+    
+    .sub-heading {
+        font-size: 1rem;
+        margin-top: 0.5rem;
+    }
+    
+    .amount {
+        font-size: 1rem;
+    }
+    
+    .modern-watch-img {
+        margin-top: 1rem;
+        gap: 0.8rem;
+    }
+    
+    .watch-img {
+        max-width: 250px;
+    }
+    
+    .image4 {
+        margin-top: 0.8rem;
+    }
+    
+    .popular-items {
+        margin-top: 2rem;
+    }
+    
+    .h2 {
+        font-size: 1.6rem;
+    }
+    
+    .sub-head-2 {
+        font-size: 0.85rem;
+        margin-bottom: 1rem;
+        padding: 0 0.5rem;
+    }
+}
+
+/* Extra Small Mobile (below 320px) */
+@media screen and (max-width: 319px) {
+    .headline {
+        padding: 0.5rem 0.3rem;
+    }
+    
+    .article-head {
+        font-size: 1.7rem;
+        word-spacing: 0;
+    }
+    
+    .sub-head {
+        font-size: 0.8rem;
+        margin-bottom: 0.5rem;
+    }
+    
+    .btn {
+        padding: 0.2rem 0.6rem;
+        font-size: 0.75rem;
+    }
+    
+    .img-1 {
+        max-width: 150px;
+    }
+    
+    .new-item {
+        font-size: 1.4rem;
+        padding-top: 0.8rem;
+    }
+    
+    .container-2 {
+        margin-top: 0.8rem;
+        gap: 0.5rem;
+    }
+    
+    .new-watch {
+        max-width: 200px;
+        padding: 0.3rem;
+    }
+    
+    .image2 {
+        height: 120px;
+    }
+    
+    .sub-heading {
+        font-size: 0.9rem;
+    }
+    
+    .amount {
+        font-size: 0.9rem;
+    }
+    
+    .modern-watch-img {
+        margin-top: 0.8rem;
+        gap: 0.5rem;
+    }
+    
+    .watch-img {
+        max-width: 200px;
+    }
+    
+    .image4 {
+        margin-top: 0.5rem;
+    }
+    
+    .popular-items {
+        margin-top: 1.5rem;
+    }
+    
+    .h2 {
+        font-size: 1.4rem;
+    }
+    
+    .sub-head-2 {
+        font-size: 0.8rem;
+        margin-bottom: 0.8rem;
+        padding: 0 0.3rem;
+    }
+}
+
+/* Animation adjustments for mobile devices */
+@media screen and (max-width: 768px) {
+    /* Reduce animation duration for better mobile performance */
+    .article-head {
+        animation-duration: 0.8s;
+    }
+    
+    .sub-head {
+        animation-duration: 1s;
+    }
+    
+    .btn {
+        animation-duration: 0.8s;
+    }
+    
+    .img-1 {
+        animation-duration: 1.5s;
+    }
+    
+    /* Disable hover effects on touch devices */
+    .image-wrapper:hover .image2,
+    .image-wrapping:hover .image3,
+    .image-wrapping:hover .image4 {
+        transform: none;
+    }
+    
+    .image3:hover,
+    .image4:hover {
+        filter: none;
+    }
+}
+
+/* Prefer reduced motion for accessibility */
+@media (prefers-reduced-motion: reduce) {
+    .article-head,
+    .sub-head,
+    .btn,
+    .img-1 {
+        animation: none;
+    }
+    
+    .image2,
+    .image3,
+    .image4 {
+        transition: none;
+    }
+    
+    .image-wrapper:hover .image2,
+    .image-wrapping:hover .image3,
+    .image-wrapping:hover .image4 {
+        transform: none;
+    }
+}
+
+/* High DPI / Retina Displays */
+@media screen and (-webkit-min-device-pixel-ratio: 2),
+       screen and (min-resolution: 192dpi) {
+    .btn {
+        border: none;
+        outline: none;
+    }
+}
