@@ -27,8 +27,8 @@ SECRET_KEY = 'django-insecure-4osafd^j9hk5g$ga8=p4q@-ak6$tx$x2qpt_qrn_e_#^dq6_rv
 # SECURITY WARNING: don't run with debug turned on in production!
 DEBUG = True
 
-ALLOWED_HOSTS = ['timezone-mp11.onrender.com', 'localhost', '127.0.0.1']
-CSRF_TRUSTED_ORIGINS = ['https://timezone-mp11.onrender.com']
+ALLOWED_HOSTS = ['timezone-y23w.onrender.com', 'localhost', '127.0.0.1']
+CSRF_TRUSTED_ORIGINS = ['https://timezone-y23w.onrender.com']
 
 
 # Application definition
