@@ -1,0 +1,921 @@
+@media screen and (min-width: 1440px) {
+    .navbar {
+        padding: 1.5rem 4rem !important;
+    }
+    
+    /* .navbar-logo img {
+        height: 60px;
+    } */
+    
+    .navbar-list {
+        gap: 3rem;
+    }
+    
+    .navbar-list li a {
+        font-size: 1.1rem;
+    }
+    
+    .navbar-icon {
+        gap: 1.5rem;
+    }
+    
+    .navbar-icon a {
+        font-size: 1.3rem;
+    }
+}
+
+/* Standard Desktop (1200px - 1439px) */
+@media screen and (max-width: 1439px) {
+    .navbar {
+        padding: 1.2rem 3rem !important;
+    }
+    
+    .navbar-list {
+        gap: 2.5rem;
+    }
+}
+
+/* Small Desktop / Large Laptop (992px - 1199px) */
+@media screen and (max-width: 1199px) {
+    .navbar {
+        padding: 1rem 2rem !important;
+    }
+    
+    .navbar-list {
+        gap: 1.5rem;
+    }
+    
+    .navbar-list li a {
+        font-size: 0.95rem;
+    }
+}
+
+/* Tablet and Mobile (768px and below) - Bootstrap breakpoint */
+@media screen and (max-width: 991px) {
+    .navbar {
+        padding: 1rem 1.5rem !important;
+        position: relative;
+    }
+    
+    .navbar-brand {
+        order: 1;
+    }
+    
+    .navbar-toggler {
+        order: 3;
+        margin-left: auto;
+        padding: 0.5rem;
+        font-size: 1.8rem;
+        border: 2px solid #333;
+        border-radius: 5px;
+        background: transparent;
+    }
+    
+    .navbar-toggler:hover {
+        background: #f8f9fa;
+    }
+    
+    .navbar-collapse {
+        order: 4;
+        width: 100%;
+        margin-top: 1rem;
+        background: #fff;
+        border-radius: 8px;
+        box-shadow: 0 4px 6px rgba(0,0,0,0.1);
+        padding: 1rem;
+    }
+    
+    .navbar-list {
+        flex-direction: column;
+        gap: 0;
+        width: 100%;
+        margin-bottom: 1rem;
+    }
+    
+    .navbar-list li {
+        width: 100%;
+        text-align: center;
+        border-bottom: 1px solid #eee;
+    }
+    
+    .navbar-list li:last-child {
+        border-bottom: none;
+    }
+    
+    .navbar-list li a {
+        display: block;
+        padding: 0.8rem 1rem;
+        font-size: 1rem;
+        border-radius: 4px;
+        transition: background-color 0.3s ease;
+    }
+    
+    .navbar-list li a:hover {
+        background-color: #f8f9fa;
+        color: #007bff;
+    }
+    
+    /* Dropdown styles for mobile */
+    .nav-item.dropdown {
+        position: relative;
+    }
+    
+    .dropdown-menu {
+        position: static !important;
+        transform: none !important;
+        box-shadow: none;
+        border: none;
+        background: #f8f9fa;
+        margin-top: 0;
+        border-radius: 0;
+    }
+    
+    .dropdown-item {
+        padding: 0.5rem 1.5rem;
+        font-size: 0.9rem;
+        color: #666;
+    }
+    
+    .dropdown-item:hover {
+        background-color: #e9ecef;
+        color: #333;
+    }
+    
+    .navbar-icon {
+        justify-content: center;
+        gap: 2rem;
+        padding: 1rem 0;
+    }
+    
+    .navbar-icon a {
+        font-size: 1.5rem;
+        padding: 0.5rem;
+        border-radius: 50%;
+        transition: all 0.3s ease;
+    }
+    
+    .navbar-icon a:hover {
+        background-color: #f8f9fa;
+        transform: scale(1.1);
+    }
+}
+
+/* Tablet Portrait (576px - 767px) */
+@media screen and (max-width: 767px) {
+    .navbar {
+        padding: 0.8rem 1rem !important;
+    }
+    
+    .navbar-logo img {
+        height: 40px;
+    }
+    
+    .navbar-toggler {
+        font-size: 1.6rem;
+        padding: 0.4rem;
+    }
+    
+    .navbar-collapse {
+        margin-top: 0.8rem;
+        padding: 0.8rem;
+    }
+    
+    .navbar-list li a {
+        padding: 0.7rem 0.8rem;
+        font-size: 0.95rem;
+    }
+    
+    .dropdown-item {
+        padding: 0.4rem 1.2rem;
+        font-size: 0.85rem;
+    }
+    
+    .navbar-icon {
+        gap: 1.5rem;
+        padding: 0.8rem 0;
+    }
+    
+    .navbar-icon a {
+        font-size: 1.3rem;
+        padding: 0.4rem;
+    }
+}
+
+/* Mobile Portrait (320px - 575px) */
+@media screen and (max-width: 575px) {
+    .navbar {
+        padding: 0.6rem 0.8rem !important;
+    }
+    
+    
+    .navbar-toggler {
+        font-size: 1.4rem;
+        padding: 0.3rem;
+    }
+    
+    .navbar-collapse {
+        margin-top: 0.6rem;
+        padding: 0.6rem;
+    }
+    
+    .navbar-list li a {
+        padding: 0.6rem 0.6rem;
+        font-size: 0.9rem;
+    }
+    
+    .dropdown-item {
+        padding: 0.3rem 1rem;
+        font-size: 0.8rem;
+    }
+    
+    .navbar-icon {
+        gap: 1rem;
+        padding: 0.6rem 0;
+    }
+    
+    .navbar-icon a {
+        font-size: 1.2rem;
+        padding: 0.3rem;
+    }
+}
+
+/* Extra Small Mobile (below 320px) */
+@media screen and (max-width: 319px) {
+    .navbar {
+        padding: 0.5rem 0.5rem !important;
+    }
+    
+    .navbar-toggler {
+        font-size: 1.2rem;
+        padding: 0.2rem;
+    }
+    
+    .navbar-collapse {
+        margin-top: 0.5rem;
+        padding: 0.5rem;
+    }
+    
+    .navbar-list li a {
+        padding: 0.5rem 0.4rem;
+        font-size: 0.85rem;
+    }
+    
+    .dropdown-item {
+        padding: 0.25rem 0.8rem;
+        font-size: 0.75rem;
+    }
+    
+    .navbar-icon {
+        gap: 0.8rem;
+        padding: 0.5rem 0;
+    }
+    
+    .navbar-icon a {
+        font-size: 1.1rem;
+        padding: 0.25rem;
+    }
+}
+
+/* Fix for Bootstrap collapse animation */
+.navbar-collapse.collapsing {
+    transition: height 0.35s ease;
+}
+
+.navbar-collapse.show {
+    display: block !important;
+}
+
+/* Ensure proper z-index for dropdown menus */
+.navbar .dropdown-menu {
+    z-index: 1050;
+}
+
+/* Custom toggle button animation */
+.navbar-toggler {
+    transition: all 0.3s ease;
+}
+
+.navbar-toggler:not(.collapsed) {
+    transform: rotate(90deg);
+}
+
+/* Smooth transitions for all navbar elements */
+.navbar-collapse,
+.navbar-list,
+.navbar-icon {
+    transition: all 0.3s ease;
+}
+
+/* ==========================================================================
+   CONTENT AREA MEDIA QUERIES (Your existing styles)
+   ========================================================================== */
+
+/* Large Desktop (1440px and up) */
+@media screen and (min-width: 1440px) {
+    .headline {
+        padding: 0 4rem;
+    }
+    
+    .article-head {
+        padding-left: 6rem;
+        font-size: 4rem;
+    }
+    
+    .sub-head {
+        padding-left: 6rem;
+        margin-top: 1rem;
+        text-align: left;
+    }
+    
+    .btn {
+        margin-left: 6rem;
+        padding: 1rem 2rem;
+        font-size: 1.1rem;
+    }
+    
+    .container-2 {
+        gap: 3rem;
+    }
+    
+    .modern-watch-img {
+        gap: 2rem;
+    }
+}
+
+
+
+
+/* Standard Desktop (1200px - 1439px) */
+@media screen and (max-width: 1439px) {
+    .article-head {
+        font-size: 5rem;
+    }
+    
+    .sub-head {
+        font-size: 1.2rem;
+    }
+}
+
+/* Small Desktop / Large Laptop (992px - 1199px) */
+@media screen and (max-width: 1199px) {
+    .headline {
+        padding: 0 2rem;
+    }
+    
+    .article-head {
+        padding-left: 3rem;
+        font-size: 4.5rem;
+        word-spacing: 0.8rem;
+    }
+    
+    .sub-head {
+        padding-left: 3rem;
+        font-size: 1.1rem;
+    }
+    
+    .btn {
+        margin-left: 3rem;
+        padding: 0.7rem 1.5rem;
+    }
+    
+    .container-2 {
+        gap: 1.5rem;
+    }
+    
+    .modern-watch-img {
+        gap: 1rem;
+        margin-top: 3rem;
+    }
+    
+    .popular-items {
+        margin-top: 8rem;
+    }
+    
+    .h2 {
+        font-size: 2.5rem;
+    }
+}
+
+/* Tablet Landscape (768px - 991px) */
+@media screen and (max-width: 991px) {
+    .headline {
+        flex-direction: column;
+        padding: 2rem 1.5rem;
+        text-align: center;
+        gap: 2rem;
+    }
+    
+    .article-head {
+        padding-left: 0;
+        font-size: 3.5rem;
+        word-spacing: 0.5rem;
+    }
+    
+    .sub-head {
+        padding-left: 0;
+        font-size: 1rem;
+        max-width: 600px;
+        margin: 0 auto;
+    }
+    
+    .btn {
+        margin-left: 0;
+        padding: 0.6rem 1.4rem;
+        display: inline-block;
+    }
+    
+    .img-1 {
+        max-width: 400px;
+        width: 100%;
+    }
+    
+    .new-item {
+        padding-top: 3rem;
+        font-size: 2.5rem;
+    }
+    
+    .container-2 {
+        flex-wrap: wrap;
+        gap: 1.5rem;
+        margin-top: 3rem;
+    }
+    
+    .new-watch {
+        flex: 1 1 300px;
+        max-width: 350px;
+    }
+    
+    .modern-watch-img {
+        flex-wrap: wrap;
+        gap: 1rem;
+        margin-top: 3rem;
+    }
+    
+    .watch-img {
+        flex: 1 1 200px;
+    }
+    
+    .popular-items {
+        margin-top: 6rem;
+    }
+    
+    .h2 {
+        font-size: 2.2rem;
+    }
+    
+    .sub-head-2 {
+        margin-bottom: 3rem;
+        font-size: 1rem;
+    }
+}
+
+/* Tablet Portrait (576px - 767px) */
+@media screen and (max-width: 767px) {
+    .headline {
+        padding: 1.5rem 1rem;
+        min-height: auto;
+    }
+    
+    .article-head {
+        font-size: 2.8rem;
+        word-spacing: 0.3rem;
+        line-height: 1.2;
+    }
+    
+    .sub-head {
+        font-size: 0.95rem;
+        margin-bottom: 1.5rem;
+    }
+    
+    .btn {
+        padding: 0.5rem 1.2rem;
+        font-size: 0.9rem;
+    }
+    
+    .img-1 {
+        max-width: 300px;
+    }
+    
+    .new-item {
+        font-size: 2rem;
+        padding-top: 2rem;
+    }
+    
+    .container-2 {
+        flex-direction: column;
+        align-items: center;
+        gap: 1.5rem;
+        margin-top: 2rem;
+    }
+    
+    .new-watch {
+        width: 100%;
+        max-width: 300px;
+    }
+    
+    .modern-watch-img {
+        flex-direction: column;
+        align-items: center;
+        gap: 1rem;
+        margin-top: 2rem;
+    }
+    
+    .watch-img {
+        width: 100%;
+        max-width: 300px;
+    }
+    
+    .image4 {
+        margin-top: 1rem;
+    }
+    
+    .popular-items {
+        margin-top: 4rem;
+    }
+    
+    .h2 {
+        font-size: 2rem;
+    }
+    
+    .sub-head-2 {
+        margin-bottom: 2rem;
+        padding: 0 1rem;
+    }
+}
+
+/* Mobile Landscape (481px - 575px) */
+@media screen and (max-width: 575px) {
+    .headline {
+        padding: 1rem 0.8rem;
+    }
+    
+    .article-head {
+        font-size: 2.4rem;
+        word-spacing: 0.2rem;
+    }
+    
+    .sub-head {
+        font-size: 0.9rem;
+        margin-bottom: 1rem;
+    }
+    
+    .btn {
+        padding: 0.4rem 1rem;
+        font-size: 0.85rem;
+    }
+    
+    .img-1 {
+        max-width: 250px;
+    }
+    
+    .new-item {
+        font-size: 1.8rem;
+        padding-top: 1.5rem;
+    }
+    
+    .container-2 {
+        margin-top: 1.5rem;
+        gap: 1rem;
+    }
+    
+    .new-watch {
+        max-width: 280px;
+    }
+    
+    
+    .sub-heading {
+        font-size: 1.1rem;
+    }
+    
+    .amount {
+        font-size: 1.1rem;
+    }
+    
+    .modern-watch-img {
+        margin-top: 1.5rem;
+    }
+    
+    .watch-img {
+        max-width: 280px;
+    }
+    
+    .popular-items {
+        margin-top: 3rem;
+    }
+    
+    .h2 {
+        font-size: 1.8rem;
+    }
+    
+    .sub-head-2 {
+        font-size: 0.9rem;
+        margin-bottom: 1.5rem;
+    }
+}
+
+/* Mobile Portrait (320px - 480px) */
+@media screen and (max-width: 480px) {
+    .headline {
+        padding: 0.8rem 0.5rem;
+        gap: 1.5rem;
+    }
+    
+    .article-head {
+        font-size: 2rem;
+        word-spacing: 0.1rem;
+        line-height: 1.1;
+    }
+    
+    .sub-head {
+        font-size: 0.85rem;
+        margin-bottom: 0.8rem;
+        line-height: 1.4;
+    }
+    
+    .btn {
+        padding: 0.3rem 0.8rem;
+        font-size: 0.8rem;
+    }
+    
+    .img-1 {
+        max-width: 200px;
+        height: auto; /* Maintain aspect ratio */
+    }
+    
+    .new-item {
+        font-size: 1.6rem;
+        padding-top: 1rem;
+    }
+    
+    .container-2 {
+        margin-top: 1rem;
+        gap: 0.8rem;
+    }
+    
+    .new-watch {
+        max-width: 250px;
+        padding: 0.5rem;
+    }
+    
+    .image2 {
+        flex-direction: column;
+        padding: 0.5rem;
+        gap: 0.8rem;
+        width: 100%;
+        max-width: 100%;
+        box-sizing: border-box;
+        overflow: hidden;
+    }
+    
+    .image2 img {
+        width: 100%;
+        max-width: 300px;
+        height: auto;
+        object-fit: cover;
+        border-radius: 8px;
+    }
+    
+    .sub-heading {
+        font-size: 1rem;
+        margin-top: 0.5rem;
+        text-align: center;
+    }
+    
+    .amount {
+        font-size: 1rem;
+    }
+    
+    .modern-watch-img {
+        margin-top: 1rem;
+        gap: 0.8rem;
+        display: flex;
+        flex-direction: column; /* Stack vertically on mobile */
+        align-items: center;
+    }
+    
+    .watch-img {
+        max-width: 250px;
+        height: auto; /* Maintain aspect ratio */
+    }
+    
+    .image4 {
+        margin-top: 0.8rem;
+        width: 100%; /* Full width */
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+    
+    /* Ensure image4 images are responsive */
+    .image4 img {
+        max-width: 100%;
+        height: auto;
+    }
+    
+    .popular-items {
+        margin-top: 2rem;
+        padding: 0 0.5rem; /* Add horizontal padding */
+    }
+    
+    .h2 {
+        font-size: 1.6rem;
+    }
+    
+    .sub-head-2 {
+        font-size: 0.85rem;
+        margin-bottom: 1rem;
+        padding: 0 0.5rem;
+    }
+}
+
+/* Extra Small Mobile (below 320px) */
+@media screen and (max-width: 319px) {
+    .headline {
+        padding: 0.5rem 0.3rem;
+    }
+    
+    .article-head {
+        font-size: 1.7rem;
+        word-spacing: 0;
+    }
+    
+    .sub-head {
+        font-size: 0.8rem;
+        margin-bottom: 0.5rem;
+    }
+    
+    .btn {
+        padding: 0.2rem 0.6rem;
+        font-size: 0.75rem;
+    }
+    
+    .img-1 {
+        max-width: 150px;
+    }
+    
+    .new-item {
+        font-size: 1.4rem;
+        padding-top: 0.8rem;
+    }
+    
+    .container-2 {
+        margin-top: 0.8rem;
+        gap: 0.5rem;
+    }
+    
+    .new-watch {
+        max-width: 200px;
+        padding: 0.3rem;
+    }
+    
+    .image2 {
+        height: 120px;
+    }
+    
+    .sub-heading {
+        font-size: 0.9rem;
+    }
+    
+    .amount {
+        font-size: 0.9rem;
+    }
+    
+    .modern-watch-img {
+        margin-top: 0.8rem;
+        gap: 0.5rem;
+    }
+    
+    .watch-img {
+        max-width: 200px;
+    }
+    
+    .image4 {
+        margin-top: 0.5rem;
+    }
+    
+    .popular-items {
+        margin-top: 1.5rem;
+    }
+    
+    .h2 {
+        font-size: 1.4rem;
+    }
+    
+    .sub-head-2 {
+        font-size: 0.8rem;
+        margin-bottom: 0.8rem;
+        padding: 0 0.3rem;
+    }
+}
+
+/* Animation adjustments for mobile devices */
+@media screen and (max-width: 768px) {
+    /* Reduce animation duration for better mobile performance */
+    .article-head {
+        animation-duration: 0.8s;
+    }
+    
+    .sub-head {
+        animation-duration: 1s;
+    }
+    
+    .btn {
+        animation-duration: 0.8s;
+    }
+    
+    .img-1 {
+        animation-duration: 1.5s;
+    }
+    
+    /* Disable hover effects on touch devices */
+    .image-wrapper:hover .image2,
+    .image-wrapping:hover .image3,
+    .image-wrapping:hover .image4 {
+        transform: none;
+    }
+    
+    .image3:hover,
+    .image4:hover {
+        filter: none;
+    }
+}
+
+/* Prefer reduced motion for accessibility */
+@media (prefers-reduced-motion: reduce) {
+    .article-head,
+    .sub-head,
+    .btn,
+    .img-1 {
+        animation: none;
+    }
+    
+    .image2,
+    .image3,
+    .image4 {
+        transition: none;
+    }
+    
+    .image-wrapper:hover .image2,
+    .image-wrapping:hover .image3,
+    .image-wrapping:hover .image4 {
+        transform: none;
+    }
+}
+
+/* High DPI / Retina Displays */
+@media screen and (-webkit-min-device-pixel-ratio: 2),
+       screen and (min-resolution: 192dpi) {
+    .btn {
+        border: none;
+        outline: none;
+    }
+}
+
+
+/* 💻 Laptops (992px–1199px) */
+@media (max-width: 1199px) {
+  .models {
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
+
+/* 📱 Tablets (768px–991px) */
+@media (max-width: 991px) {
+  .models {
+    grid-template-columns: repeat(2, 1fr);
+  }
+
+  .button {
+    font-size: 1rem;
+    padding: 0.8rem 2rem;
+  }
+}
+
+/* 📲 Mobile phones (480px–767px) */
+@media (max-width: 767px) {
+  .models {
+    grid-template-columns: 1fr;
+  }
+
+  .more-items{
+    margin: 0 auto;
+  }
+  .button {
+    width: 80%;
+    font-size: 1rem;
+  }
+}
+
+/* 📳 Small phones (< 480px) */
+@media (max-width: 479px) {
+  .models {
+    grid-template-columns: 1fr;
+    gap: 1rem;
+  }
+
+  .button {
+    width: 100%;
+    font-size: 0.95rem;
+    padding: 0.6rem 1rem;
+  }
+}

@@ -1,0 +1,50 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body{
+     font-family: "Montserrat", sans-serif;
+    }
+
+/* NAVBAR SECTION */
+
+.navbar{
+    display: flex;
+    align-items: center;
+    padding: 5rem 2rem;
+}
+
+.navbar-list{
+    display: flex;
+    list-style: none;
+    flex: 1;
+    justify-content: center;
+    gap: 1.4rem;
+}
+.navbar-list a{
+    text-decoration: none;
+    color: black;
+}
+
+.navbar-icon{
+    display: flex;
+    justify-content:end;
+    gap: 1.4rem;
+    font-size: 1.4rem;
+}
+
+.navbar-icon a{
+    color: black;
+}
+
+.navbar-toggle {
+  display: none;
+  font-size: 28px;
+  background: none;
+  border: none;
+  cursor: pointer;
+}
+
+
