@@ -318,12 +318,13 @@
     
     .article-head {
         padding-left: 6rem;
-        font-size: 6rem;
+        font-size: 4rem;
     }
     
     .sub-head {
         padding-left: 6rem;
-        font-size: 1.3rem;
+        margin-top: 1rem;
+        text-align: left;
     }
     
     .btn {
@@ -868,4 +869,53 @@
         border: none;
         outline: none;
     }
+}
+
+
+/* 💻 Laptops (992px–1199px) */
+@media (max-width: 1199px) {
+  .models {
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
+
+/* 📱 Tablets (768px–991px) */
+@media (max-width: 991px) {
+  .models {
+    grid-template-columns: repeat(2, 1fr);
+  }
+
+  .button {
+    font-size: 1rem;
+    padding: 0.8rem 2rem;
+  }
+}
+
+/* 📲 Mobile phones (480px–767px) */
+@media (max-width: 767px) {
+  .models {
+    grid-template-columns: 1fr;
+  }
+
+  .more-items{
+    margin: 0 auto;
+  }
+  .button {
+    width: 80%;
+    font-size: 1rem;
+  }
+}
+
+/* 📳 Small phones (< 480px) */
+@media (max-width: 479px) {
+  .models {
+    grid-template-columns: 1fr;
+    gap: 1rem;
+  }
+
+  .button {
+    width: 100%;
+    font-size: 0.95rem;
+    padding: 0.6rem 1rem;
+  }
 }
