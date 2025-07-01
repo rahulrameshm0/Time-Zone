@@ -919,3 +919,342 @@
     padding: 0.6rem 1rem;
   }
 }
+
+/* ========== 1200px and below: Desktop-Laptop ========== */
+/* Base Styles - watch_details.css */
+.container-3{
+    margin-top: 5rem;
+    padding: 0 5rem;
+}
+
+.watch-details-head{
+    text-align: left;
+    font-size: 2.8rem;
+    font-weight: 700;
+}
+
+.watch-details-subhead{
+    text-align: left;
+    margin-top: 1.8rem;
+}
+
+.watch-details-head-1{
+    text-align: left;
+    font-size: 2.8rem;
+    font-weight: 700;
+}
+
+.watch-details-subhead-2{
+    text-align: left;
+    margin-top: 1.8rem;
+}
+
+.choices-1{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 10rem;
+    margin-bottom: 5rem;
+}
+
+.choices-2{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 10rem;
+}
+
+.img-3 {
+    flex-shrink: 0;
+}
+
+.img-3 img {
+    max-width: 100%;
+    height: auto;
+    display: block;
+}
+
+.content-1,
+.content-2 {
+    flex: 1;
+}
+
+.more-items-2{
+    text-decoration: none;
+    color: aliceblue;
+    font-weight: 500;
+    font-size: 1.2rem;
+}
+
+.button-2{
+    display: inline-block;
+    margin-top: 2rem;
+    border: none;
+    background-color: #ff3333;
+    position: relative;
+    padding: 1rem 2rem;
+    color: #faf7f7;
+    z-index: 1;
+    transition: color 0.4s ease;
+}
+
+.button-2::before {
+    content: "";
+    position: absolute;
+    left: 0;
+    top: 0;
+    width: 0%;
+    height: 100%;
+    background-color: #302f2f;
+    z-index: -1;
+    transition: width 0.4s ease;
+}
+
+.button-2:hover::before {
+    width: 100%;
+}
+
+/* MEDIA QUERIES - media.css */
+
+/* Large Desktop */
+@media screen and (min-width: 1200px) {
+    .container-3 {
+        max-width: 1400px;
+        margin-left: auto;
+        margin-right: auto;
+    }
+}
+
+/* Laptop */
+@media screen and (max-width: 1199px) {
+    .container-3 {
+        padding: 0 3rem;
+        margin-top: 4rem;
+    }
+    
+    .choices-1,
+    .choices-2 {
+        gap: 6rem;
+    }
+    
+    .watch-details-head,
+    .watch-details-head-1 {
+        font-size: 2.4rem;
+    }
+}
+
+/* Tablet */
+@media screen and (max-width: 991px) {
+    .container-3 {
+        padding: 0 2rem;
+        margin-top: 3rem;
+    }
+    
+    .choices-1,
+    .choices-2 {
+        gap: 4rem;
+    }
+    
+    .watch-details-head,
+    .watch-details-head-1 {
+        font-size: 2.2rem;
+    }
+    
+    .watch-details-subhead,
+    .watch-details-subhead-2 {
+        font-size: 0.95rem;
+        line-height: 1.6;
+    }
+}
+
+/* Small Tablet and Large Mobile */
+@media screen and (max-width: 768px) {
+    .container-3 {
+        padding: 0 1.5rem;
+        margin-top: 2rem;
+    }
+    
+    .choices-1,
+    .choices-2 {
+        flex-direction: column !important;
+        gap: 2.5rem !important;
+        text-align: center !important;
+        margin-bottom: 3rem;
+    }
+    
+    .choices-2 {
+        flex-direction: column-reverse !important;
+    }
+    
+    .watch-details-head,
+    .watch-details-head-1 {
+        font-size: 2rem !important;
+        text-align: center !important;
+    }
+    
+    .watch-details-subhead,
+    .watch-details-subhead-2 {
+        text-align: center !important;
+        margin-top: 1.2rem;
+        font-size: 0.9rem;
+        line-height: 1.7;
+    }
+    
+    .img-3 {
+        max-width: 300px;
+        margin: 0 auto;
+    }
+    
+    .content-1,
+    .content-2 {
+        max-width: 100%;
+    }
+    
+    .button-2 {
+        display: block !important;
+        margin: 1.5rem auto 0 auto !important;
+        width: fit-content;
+    }
+}
+
+/* Mobile */
+@media screen and (max-width: 576px) {
+    .container-3 {
+        padding: 0 1rem;
+        margin-top: 1.5rem;
+    }
+    
+    .choices-1,
+    .choices-2 {
+        gap: 2rem !important;
+        margin-bottom: 2.5rem;
+    }
+    
+    .watch-details-head,
+    .watch-details-head-1 {
+        font-size: 1.7rem !important;
+    }
+    
+    .watch-details-subhead,
+    .watch-details-subhead-2 {
+        font-size: 0.85rem;
+        margin-top: 1rem;
+        line-height: 1.8;
+    }
+    
+    .button-2 {
+        padding: 0.8rem 1.5rem;
+        font-size: 1rem;
+        margin-top: 1.2rem !important;
+    }
+    
+    .img-3 {
+        max-width: 250px;
+    }
+}
+
+/* Small Mobile */
+@media screen and (max-width: 480px) {
+    .container-3 {
+        padding: 0 0.8rem;
+        margin-top: 1rem;
+    }
+    
+    .choices-1,
+    .choices-2 {
+        gap: 1.5rem !important;
+        margin-bottom: 2rem;
+    }
+    
+    .watch-details-head,
+    .watch-details-head-1 {
+        font-size: 1.5rem !important;
+        line-height: 1.3;
+    }
+    
+    .watch-details-subhead,
+    .watch-details-subhead-2 {
+        font-size: 0.8rem;
+        margin-top: 0.8rem;
+        line-height: 1.9;
+    }
+    
+    .button-2 {
+        padding: 0.7rem 1.2rem;
+        font-size: 0.9rem;
+        margin-top: 1rem !important;
+    }
+    
+    .img-3 {
+        max-width: 200px;
+    }
+}
+
+/* Extra Small Mobile */
+@media screen and (max-width: 360px) {
+    .container-3 {
+        padding: 0 0.5rem;
+    }
+    
+    .watch-details-head,
+    .watch-details-head-1 {
+        font-size: 1.3rem !important;
+    }
+    
+    .watch-details-subhead,
+    .watch-details-subhead-2 {
+        font-size: 0.75rem;
+        margin-top: 0.6rem;
+    }
+    
+    .button-2 {
+        padding: 0.6rem 1rem;
+        font-size: 0.85rem;
+    }
+    
+    .img-3 {
+        max-width: 180px;
+    }
+}
+
+/* Landscape Mobile */
+@media screen and (max-height: 500px) and (orientation: landscape) and (max-width: 900px) {
+    .container-3 {
+        margin-top: 1rem;
+        padding: 0 2rem;
+    }
+    
+    .choices-1,
+    .choices-2 {
+        flex-direction: row !important;
+        gap: 3rem !important;
+        margin-bottom: 1.5rem;
+    }
+    
+    .choices-2 {
+        flex-direction: row !important;
+    }
+    
+    .watch-details-head,
+    .watch-details-head-1 {
+        font-size: 1.6rem !important;
+        text-align: left !important;
+    }
+    
+    .watch-details-subhead,
+    .watch-details-subhead-2 {
+        text-align: left !important;
+        font-size: 0.8rem;
+        margin-top: 0.5rem;
+    }
+    
+    .img-3 {
+        max-width: 150px;
+    }
+    
+    .button-2 {
+        margin-top: 0.8rem !important;
+        padding: 0.5rem 1rem;
+        font-size: 0.8rem;
+    }
+}
