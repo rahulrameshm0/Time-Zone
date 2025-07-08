@@ -4,12 +4,6 @@ A modern and fully responsive **online watch shop** built with Django. This proj
 
 ---
 
-## 🌐 Live Preview
-
-> *(Optional: Add live URL here if hosted on Render, Vercel, etc.)*
-
----
-
 ## 🧩 Project Highlights
 
 - 🕒 **Real-Time Timezone Display**  
